@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>随笔</title><link>https://hasafox.github.io/</link><description>Recent content on 随笔</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Sun, 26 Mar 2023 16:41:42 +0800</lastBuildDate><atom:link href="https://hasafox.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>Rust 初探</title><link>https://hasafox.github.io/p/rust-%E5%88%9D%E6%8E%A2/</link><pubDate>Sun, 26 Mar 2023 16:41:42 +0800</pubDate><guid>https://hasafox.github.io/p/rust-%E5%88%9D%E6%8E%A2/</guid><description/></item><item><title>TrueNAS Scale 安装</title><link>https://hasafox.github.io/p/truenas-scale-%E5%AE%89%E8%A3%85/</link><pubDate>Sun, 26 Mar 2023 16:41:42 +0800</pubDate><guid>https://hasafox.github.io/p/truenas-scale-%E5%AE%89%E8%A3%85/</guid><description>&lt;h2 id="配置选择">配置选择&lt;/h2>
+&lt;p>TRUENAS相比于其他NAS系统，需要的内存容量较高，官网要求8G起步，推荐16G，越多越好，TRUENAS文档 &lt;a class="link" href="https://www.truenas.com/docs/scale/gettingstarted/scalehardwareguide/" target="_blank" rel="noopener"
+>here&lt;/a>。
+高性能意味着高功率，因此配置因人而异：&lt;/p>
+&lt;ul>
+&lt;li>想要什么都玩，就选高配置&lt;/li>
+&lt;li>只要本地存储，就选低配置&lt;/li>
+&lt;li>花钱的大头是存储（即机械硬盘）&lt;/li>
+&lt;/ul>
+&lt;p>以下为个人NAS配置：&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th style="text-align:center">硬件&lt;/th>
+&lt;th style="text-align:center">型号&lt;/th>
+&lt;th style="text-align:right">价格&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td style="text-align:center">CPU&lt;/td>
+&lt;td style="text-align:center">I5 10500 QSRK&lt;/td>
+&lt;td style="text-align:right">760&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:center">主板&lt;/td>
+&lt;td style="text-align:center">二手华硕B460M PLUS&lt;/td>
+&lt;td style="text-align:right">430&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:center">散热&lt;/td>
+&lt;td style="text-align:center">冰曼6热管风冷散热器&lt;/td>
+&lt;td style="text-align:right">60&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:center">内存条&lt;/td>
+&lt;td style="text-align:center">光威(3200) 8G*2&lt;/td>
+&lt;td style="text-align:right">239&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:center">电源&lt;/td>
+&lt;td style="text-align:center">长城(80plus) 500w直出电源&lt;/td>
+&lt;td style="text-align:right">300&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:center">机箱&lt;/td>
+&lt;td style="text-align:center">爱国者A15&lt;/td>
+&lt;td style="text-align:right">139&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:center">固态硬盘&lt;/td>
+&lt;td style="text-align:center">三星 980 500G&lt;/td>
+&lt;td style="text-align:right">369&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:center">机械硬盘&lt;/td>
+&lt;td style="text-align:center">二手西数 14T*2&lt;/td>
+&lt;td style="text-align:right">780*2&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:center">合计&lt;/td>
+&lt;td style="text-align:center">&lt;/td>
+&lt;td style="text-align:right">3858&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>机箱是之前买错了剩下的，建议没多余机箱的买4/6盘位机箱，具体盘位数量按主板接口和实际需求考虑。&lt;/p>
+&lt;h2 id="镜像制作">镜像制作&lt;/h2>
+&lt;h3 id="准备阶段">准备阶段&lt;/h3>
+&lt;ul>
+&lt;li>
+&lt;p>U盘(4G以上)&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>软件
+&lt;a class="link" href="https://www.truenas.com/download-truenas-scale/" target="_blank" rel="noopener"
+>TRUENAS SCALE&lt;/a>（也可以选择truenas core，安装方式基本一致）
+&lt;a class="link" href="https://ultraiso.en.softonic.com/download" target="_blank" rel="noopener"
+>ULTRAISO&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>制作镜像
+打开ULTRAISO，选择&lt;/p>
+&lt;/li>
+&lt;/ul></description></item><item><title>Archives</title><link>https://hasafox.github.io/archives/</link><pubDate>Wed, 01 Mar 2023 00:00:00 +0000</pubDate><guid>https://hasafox.github.io/archives/</guid><description/></item><item><title>Links</title><link>https://hasafox.github.io/links/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hasafox.github.io/links/</guid><description/></item><item><title>Search</title><link>https://hasafox.github.io/search/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hasafox.github.io/search/</guid><description/></item></channel></rss>
