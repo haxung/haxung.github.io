@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>外键 on 时光随笔</title><link>https://haxung.github.io/tags/%E5%A4%96%E9%94%AE/</link><description>Recent content in 外键 on 时光随笔</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Mon, 27 Mar 2023 22:51:18 +0800</lastBuildDate><atom:link href="https://haxung.github.io/tags/%E5%A4%96%E9%94%AE/index.xml" rel="self" type="application/rss+xml"/><item><title>MySQL 外键知识</title><link>https://haxung.github.io/p/mysql/</link><pubDate>Mon, 27 Mar 2023 22:51:18 +0800</pubDate><guid>https://haxung.github.io/p/mysql/</guid><description>&lt;h2 id="外键介绍">外键介绍&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>外键 on 时光随笔</title><link>https://haxung.github.io/tags/%E5%A4%96%E9%94%AE/</link><description>Recent content in 外键 on 时光随笔</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Mon, 27 Mar 2023 22:51:18 +0800</lastBuildDate><atom:link href="https://haxung.github.io/tags/%E5%A4%96%E9%94%AE/index.xml" rel="self" type="application/rss+xml"/><item><title>MySQL 外键介绍</title><link>https://haxung.github.io/p/mysql-%E5%A4%96%E9%94%AE%E4%BB%8B%E7%BB%8D/</link><pubDate>Mon, 27 Mar 2023 22:51:18 +0800</pubDate><guid>https://haxung.github.io/p/mysql-%E5%A4%96%E9%94%AE%E4%BB%8B%E7%BB%8D/</guid><description>&lt;h2 id="外键介绍">外键介绍&lt;/h2>
 &lt;p>以学生为例，使用数据库 &lt;code>student&lt;/code>：&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
@@ -99,8 +99,9 @@
 &lt;/ul>
 &lt;h2 id="外键使用">外键使用&lt;/h2>
 &lt;p>可以使用下面的命令为从表 &lt;code>first_term_score&lt;/code> 添加外键约束：&lt;/p>
-&lt;ol>
-&lt;li>设置主表参照列为主键
+&lt;ul>
+&lt;li>
+&lt;p>设置主表参照列为主键&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
@@ -109,7 +110,7 @@
 &lt;pre tabindex="0" class="chroma">&lt;code class="language-mysql" data-lang="mysql">&lt;span class="line">&lt;span class="cl">&lt;span class="k">ALTER&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">TABLE&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">`&lt;/span>&lt;span class="n">info&lt;/span>&lt;span class="o">`&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">ADD&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">PRIMARY&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">KEY&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="nf">number&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">number&lt;/span>&lt;span class="p">);&lt;/span>&lt;span class="w">
 &lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>或者设置为唯一索引
+&lt;/div>&lt;p>或者设置为唯一索引&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
@@ -118,7 +119,7 @@
 &lt;pre tabindex="0" class="chroma">&lt;code class="language-mysql" data-lang="mysql">&lt;span class="line">&lt;span class="cl">&lt;span class="k">ALTER&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">TABLE&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">`&lt;/span>&lt;span class="n">info&lt;/span>&lt;span class="o">`&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">ADD&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">UNIQUE&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="nf">number&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">number&lt;/span>&lt;span class="p">);&lt;/span>&lt;span class="w">
 &lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>或者变更字段属性（添加非空约束）
+&lt;/div>&lt;p>或者变更字段属性（添加非空约束）&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
@@ -132,7 +133,8 @@
 &lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;/li>
-&lt;li>为从表外键列建立索引
+&lt;li>
+&lt;p>为从表外键列建立索引&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
@@ -141,7 +143,7 @@
 &lt;pre tabindex="0" class="chroma">&lt;code class="language-mysql" data-lang="mysql">&lt;span class="line">&lt;span class="cl">&lt;span class="k">ALTER&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">TABLE&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">`&lt;/span>&lt;span class="n">first_term_score&lt;/span>&lt;span class="o">`&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">ADD&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">INDEX&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="nf">number&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">number&lt;/span>&lt;span class="p">);&lt;/span>&lt;span class="w">
 &lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>或者建立唯一索引
+&lt;/div>&lt;p>或者建立唯一索引&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
@@ -151,24 +153,21 @@
 &lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;/li>
-&lt;li>设置从表外键约束
+&lt;li>
+&lt;p>设置从表外键约束&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
 &lt;/span>&lt;span class="lnt">2
 &lt;/span>&lt;span class="lnt">3
 &lt;/span>&lt;span class="lnt">4
-&lt;/span>&lt;span class="lnt">5
-&lt;/span>&lt;span class="lnt">6
 &lt;/span>&lt;/code>&lt;/pre>&lt;/td>
 &lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code class="language-mysql" data-lang="mysql">&lt;span class="line">&lt;span class="cl">&lt;span class="k">ALTER&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">TABLE&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">`&lt;/span>&lt;span class="n">first_term_score&lt;/span>&lt;span class="o">`&lt;/span>&lt;span class="w">
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="k">ADD&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">CONSTRAINT&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">number&lt;/span>&lt;span class="w">
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="k">FOREIGN&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">KEY&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">number&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="w">
-&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="k">REFERENCES&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">`&lt;/span>&lt;span class="n">info&lt;/span>&lt;span class="o">`&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">number&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="w">
-&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="k">ON&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">DELETE&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">CASCADE&lt;/span>&lt;span class="w">
-&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="k">ON&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">UPDATE&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">CASCADE&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="k">REFERENCES&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">`&lt;/span>&lt;span class="n">info&lt;/span>&lt;span class="o">`&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">number&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">ON&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">DELETE&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">CASCADE&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">ON&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">UPDATE&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">CASCADE&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="w">
 &lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;/li>
-&lt;/ol></description></item></channel></rss>
+&lt;/ul></description></item></channel></rss>
