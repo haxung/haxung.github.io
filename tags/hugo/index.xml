@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Hugo on 时光随笔</title><link>https://haxung.github.io/tags/hugo/</link><description>Recent content in Hugo on 时光随笔</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Tue, 02 May 2023 16:05:32 +0800</lastBuildDate><atom:link href="https://haxung.github.io/tags/hugo/index.xml" rel="self" type="application/rss+xml"/><item><title>Hugo 简介</title><link>https://haxung.github.io/p/hugo-%E7%AE%80%E4%BB%8B/</link><pubDate>Tue, 02 May 2023 16:05:32 +0800</pubDate><guid>https://haxung.github.io/p/hugo-%E7%AE%80%E4%BB%8B/</guid><description>&lt;h2 id="引言">引言&lt;/h2>
+&lt;p>&lt;a class="link" href="https://github.com/gohugoio/hugo" target="_blank" rel="noopener"
+>Hugo&lt;/a> 是一个用Go语言实现的静态网站生成器。它简单、易用、高效、易扩展、快速部署。
+确切地说，Hugo 是一个把符合规则的 markdown 文档转为静态网站的 html、css 等文件的工具。&lt;/p>
+&lt;p>Hugo 作为当前最流行的开源静态站点生成器之一，以其惊人的速度和灵活性，使得搭建个人博客再次变得简便、快捷、有趣。
+Hugo 的构建速度非常快，每页小于 1 毫秒，平均站点在不到一秒钟内构建完成。
+Hugo 支持无限的内容类型、分类法、菜单、动态 API 驱动内容等，而且无需插件。
+Hugo 还提供了内置模板，可以快速完成 SEO、评论、分析等功能。它还支持多语言和 i18n，可以轻松构建多语言站点。
+此外，Hugo 还支持自定义输出格式，包括 JSON 或 AMP，并且可以轻松创建自己的输出格式。
+它还提供了 300 多种主题，并且具有强大的模板系统，可以轻松实现复杂的网站。&lt;/p>
+&lt;p>安装 Hugo 也非常简单，可以在 macOS、Windows、Linux、FreeBSD 等操作系统上运行，并且可以托管在任何服务器或 CDN 上。&lt;/p>
+&lt;h2 id="安装">安装&lt;/h2>
+&lt;h2 id="创建站点">创建站点&lt;/h2>
+&lt;h2 id="主题和模板介绍hugo的主题系统如何选择和安装主题以及如何使用模板定制网站">主题和模板：介绍Hugo的主题系统，如何选择和安装主题，以及如何使用模板定制网站&lt;/h2>
+&lt;h2 id="多语言支持介绍hugo如何支持多语言站点">多语言支持：介绍Hugo如何支持多语言站点&lt;/h2>
+&lt;h2 id="自定义输出格式介绍hugo如何支持自定义输出格式包括json和amp等">自定义输出格式：介绍Hugo如何支持自定义输出格式，包括JSON和AMP等&lt;/h2>
+&lt;h2 id="部署hugo站点介绍如何将hugo站点部署到服务器或cdn上">部署Hugo站点：介绍如何将Hugo站点部署到服务器或CDN上&lt;/h2>
+&lt;h2 id="结论总结hugo的优点和特点鼓励读者尝试使用hugo">结论：总结Hugo的优点和特点，鼓励读者尝试使用Hugo&lt;/h2></description></item></channel></rss>
