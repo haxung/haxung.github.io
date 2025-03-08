@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>SQL 语句 on 时光随笔</title><link>https://haxung.github.io/tags/sql-%E8%AF%AD%E5%8F%A5/</link><description>Recent content in SQL 语句 on 时光随笔</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Wed, 05 Apr 2023 21:47:40 +0800</lastBuildDate><atom:link href="https://haxung.github.io/tags/sql-%E8%AF%AD%E5%8F%A5/index.xml" rel="self" type="application/rss+xml"/><item><title>MySQL 基础语句</title><link>https://haxung.github.io/p/mysql-%E5%9F%BA%E7%A1%80%E8%AF%AD%E5%8F%A5/</link><pubDate>Wed, 05 Apr 2023 21:47:40 +0800</pubDate><guid>https://haxung.github.io/p/mysql-%E5%9F%BA%E7%A1%80%E8%AF%AD%E5%8F%A5/</guid><description>&lt;h2 id="基础操作">基础操作&lt;/h2>
-&lt;p>在介绍 &lt;code>MySQL&lt;/code> 基础操作前，需要先安装 &lt;code>MySQL&lt;/code> 。&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>SQL 语句 on 时光随笔</title><link>https://haxung.github.io/tags/sql-%E8%AF%AD%E5%8F%A5/</link><description>Recent content in SQL 语句 on 时光随笔</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Wed, 05 Apr 2023 21:47:40 +0800</lastBuildDate><atom:link href="https://haxung.github.io/tags/sql-%E8%AF%AD%E5%8F%A5/index.xml" rel="self" type="application/rss+xml"/><item><title>MySQL 基础语句</title><link>https://haxung.github.io/p/mysql-%E5%9F%BA%E7%A1%80%E8%AF%AD%E5%8F%A5/</link><pubDate>Wed, 05 Apr 2023 21:47:40 +0800</pubDate><guid>https://haxung.github.io/p/mysql-%E5%9F%BA%E7%A1%80%E8%AF%AD%E5%8F%A5/</guid><description>&lt;h2 id="基础操作">基础操作
+&lt;/h2>&lt;p>在介绍 &lt;code>MySQL&lt;/code> 基础操作前，需要先安装 &lt;code>MySQL&lt;/code> 。&lt;/p>
 &lt;ul>
 &lt;li>
 &lt;p>&lt;code>Linux&lt;/code> 系统安装 &lt;code>MySQL&lt;/code>&lt;/p>
@@ -54,8 +54,8 @@
 &lt;/div>
 &lt;/div>&lt;/li>
 &lt;/ul>
-&lt;h3 id="数据库操作">数据库操作&lt;/h3>
-&lt;p>下面将创建数据库 &lt;code>mysql_test&lt;/code>，在此数据库下创建数据表 &lt;code>test&lt;/code>，然后进行一系列的数据库操作。&lt;/p>
+&lt;h3 id="数据库操作">数据库操作
+&lt;/h3>&lt;p>下面将创建数据库 &lt;code>mysql_test&lt;/code>，在此数据库下创建数据表 &lt;code>test&lt;/code>，然后进行一系列的数据库操作。&lt;/p>
 &lt;ul>
 &lt;li>
 &lt;p>连接 &lt;code>MySQL Server&lt;/code>&lt;/p>
@@ -214,8 +214,8 @@
 &lt;p>尽量不要变更数据库名称！！！&lt;/p>
 &lt;/li>
 &lt;/ul>
-&lt;h3 id="数据表操作">数据表操作&lt;/h3>
-&lt;ul>
+&lt;h3 id="数据表操作">数据表操作
+&lt;/h3>&lt;ul>
 &lt;li>
 &lt;p>创建数据表&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
@@ -361,8 +361,8 @@
 &lt;/div>
 &lt;/div>&lt;/li>
 &lt;/ul>
-&lt;h3 id="字段操作">字段操作&lt;/h3>
-&lt;ul>
+&lt;h3 id="字段操作">字段操作
+&lt;/h3>&lt;ul>
 &lt;li>
 &lt;p>添加主键&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
@@ -460,8 +460,8 @@
 &lt;/ul>
 &lt;/li>
 &lt;/ul>
-&lt;h3 id="增删改查操作">增删改查操作&lt;/h3>
-&lt;ul>
+&lt;h3 id="增删改查操作">增删改查操作
+&lt;/h3>&lt;ul>
 &lt;li>
 &lt;p>增加数据&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
