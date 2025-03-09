@@ -1,19 +1,242 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Hugo on 时光随笔</title><link>https://haxung.github.io/tags/hugo/</link><description>Recent content in Hugo on 时光随笔</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Tue, 02 May 2023 16:05:32 +0800</lastBuildDate><atom:link href="https://haxung.github.io/tags/hugo/index.xml" rel="self" type="application/rss+xml"/><item><title>Hugo 简介</title><link>https://haxung.github.io/p/hugo-%E7%AE%80%E4%BB%8B/</link><pubDate>Tue, 02 May 2023 16:05:32 +0800</pubDate><guid>https://haxung.github.io/p/hugo-%E7%AE%80%E4%BB%8B/</guid><description>&lt;h2 id="引言">引言
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Hugo on 时光随笔</title><link>https://haxung.github.io/tags/hugo/</link><description>Recent content in Hugo on 时光随笔</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Tue, 02 May 2023 16:05:32 +0800</lastBuildDate><atom:link href="https://haxung.github.io/tags/hugo/index.xml" rel="self" type="application/rss+xml"/><item><title>hugo 简介</title><link>https://haxung.github.io/p/hugo-%E7%AE%80%E4%BB%8B/</link><pubDate>Tue, 02 May 2023 16:05:32 +0800</pubDate><guid>https://haxung.github.io/p/hugo-%E7%AE%80%E4%BB%8B/</guid><description>&lt;h2 id="引言">引言
 &lt;/h2>&lt;p>&lt;a class="link" href="https://github.com/gohugoio/hugo" target="_blank" rel="noopener"
->Hugo&lt;/a> 是一个用Go语言实现的静态网站生成器。它简单、易用、高效、易扩展、快速部署。
-确切地说，Hugo 是一个把符合规则的 markdown 文档转为静态网站的 html、css 等文件的工具。&lt;/p>
-&lt;p>Hugo 作为当前最流行的开源静态站点生成器之一，以其惊人的速度和灵活性，使得搭建个人博客再次变得简便、快捷、有趣。
-Hugo 的构建速度非常快，每页小于 1 毫秒，平均站点在不到一秒钟内构建完成。
-Hugo 支持无限的内容类型、分类法、菜单、动态 API 驱动内容等，而且无需插件。
-Hugo 还提供了内置模板，可以快速完成 SEO、评论、分析等功能。它还支持多语言和 i18n，可以轻松构建多语言站点。
-此外，Hugo 还支持自定义输出格式，包括 JSON 或 AMP，并且可以轻松创建自己的输出格式。
-它还提供了 300 多种主题，并且具有强大的模板系统，可以轻松实现复杂的网站。&lt;/p>
-&lt;p>安装 Hugo 也非常简单，可以在 macOS、Windows、Linux、FreeBSD 等操作系统上运行，并且可以托管在任何服务器或 CDN 上。&lt;/p>
-&lt;h2 id="安装">安装
-&lt;/h2>&lt;h2 id="创建站点">创建站点
-&lt;/h2>&lt;h2 id="主题和模板介绍hugo的主题系统如何选择和安装主题以及如何使用模板定制网站">主题和模板：介绍Hugo的主题系统，如何选择和安装主题，以及如何使用模板定制网站
-&lt;/h2>&lt;h2 id="多语言支持介绍hugo如何支持多语言站点">多语言支持：介绍Hugo如何支持多语言站点
-&lt;/h2>&lt;h2 id="自定义输出格式介绍hugo如何支持自定义输出格式包括json和amp等">自定义输出格式：介绍Hugo如何支持自定义输出格式，包括JSON和AMP等
-&lt;/h2>&lt;h2 id="部署hugo站点介绍如何将hugo站点部署到服务器或cdn上">部署Hugo站点：介绍如何将Hugo站点部署到服务器或CDN上
-&lt;/h2>&lt;h2 id="结论总结hugo的优点和特点鼓励读者尝试使用hugo">结论：总结Hugo的优点和特点，鼓励读者尝试使用Hugo
-&lt;/h2></description></item></channel></rss>
+>hugo&lt;/a> 是一个用 Go 语言实现的静态网站生成器。把符合规则的 markdown 文档转为静态网站的 html、css 等文件的工具，
+即将 markdown 文档转为博客。&lt;/p>
+&lt;p>提供三个版本可供&lt;a class="link" href="https://gohugo.io/installation/" target="_blank" rel="noopener"
+>安装&lt;/a>，版本区别如下所示，推荐安装 extend 版本。&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>版本&lt;/th>
+&lt;th>说明&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>standard&lt;/td>
+&lt;td>基础版本，适用于一般的静态网站生成&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>extend&lt;/td>
+&lt;td>包含 standard 的所有功能，额外支持 SCSS/SASS 编译和 resources 处理功能&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>extended/deploy&lt;/td>
+&lt;td>包含 extend 的所有功能，额外包含 hugo 内置的 hugo deploy 功能，可以将网站部署到云存储服务（AWS S3、Google Cloud Storage 等）&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;blockquote>
+&lt;p>也可以直接从 GitHub 中下载压缩包后解压&lt;/p>
+&lt;p>注意：需要将解压后的路径地址添加到&lt;strong>系统环境变量（PATH）&lt;/strong>！！！&lt;/p>&lt;/blockquote>
+&lt;h2 id="创建站点">创建站点
+&lt;/h2>&lt;blockquote>
+&lt;p>需要提前安装 &lt;a class="link" href="https://gohugo.io/installation/" target="_blank" rel="noopener"
+>hugo&lt;/a> 和 &lt;a class="link" href="https://git-scm.com/downloads" target="_blank" rel="noopener"
+>Git&lt;/a>&lt;/p>&lt;/blockquote>
+&lt;ol>
+&lt;li>
+&lt;p>初始化：在本地创建 &lt;code>quickstart&lt;/code> 文件夹，并在文件夹中生成 hugo 模板和默认配置。&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">hugo new site quickstart
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">cd&lt;/span> quickstart
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;/li>
+&lt;li>
+&lt;p>修改内容：&lt;code>quickstart&lt;/code> 设置为项目根目录并 git 初始化，通过 &lt;code>git submodule&lt;/code> 方式将 gohugo-theme-ananke 主题下载到 &lt;code>quickstart/themes/ananke&lt;/code> 路径下，修改 &lt;code>hugo.toml&lt;/code> 文件设置主题为 &lt;code>ananke&lt;/code>。&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">git init
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">git submodule add https://github.com/theNewDynamic/gohugo-theme-ananke.git themes/ananke
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">echo&lt;/span> &lt;span class="s2">&amp;#34;theme = &amp;#39;ananke&amp;#39;&amp;#34;&lt;/span> &amp;gt;&amp;gt; hugo.toml
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;blockquote>
+&lt;p>主题名需要与 themes 文件夹下的目录名称保持一致&lt;/p>
+&lt;p>主题 ananke 文件夹结构与 quickstart 结构基本相同，可以理解为 quickstart 中为默认配置，
+选择 ananke 主题后，ananke 中的配置替换掉默认配置，因此可以轻松替换网站主题&lt;/p>&lt;/blockquote>
+&lt;/li>
+&lt;li>
+&lt;p>本地部署：运行如下命令后可以打开浏览器输入 &lt;code>localhost:1313&lt;/code> 查看网站效果。&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">hugo server
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;blockquote>
+&lt;p>hugo server 运行后会生成 public 和 resources 目录，其中 public 才是网站的本体。&lt;/p>&lt;/blockquote>
+&lt;/li>
+&lt;/ol>
+&lt;p>可以在 &lt;a class="link" href="https://themes.gohugo.io/" target="_blank" rel="noopener"
+>here&lt;/a> 选择不同的 hugo 主题。&lt;/p>
+&lt;blockquote>
+&lt;p>当然也可以自己设置主题，并将其发布。&lt;/p>&lt;/blockquote>
+&lt;h2 id="自动化部署">自动化部署
+&lt;/h2>&lt;p>写博客不仅仅是为方便自己，有时候也希望帮助他人。那么怎么样才能将博客分享到互联网上？
+这里提供一个简单方便的做法：github pages（gh-pages）。&lt;/p>
+&lt;h3 id="gh-pages">gh-pages
+&lt;/h3>&lt;p>&lt;a class="link" href="https://pages.github.com/" target="_blank" rel="noopener"
+>gh-pages&lt;/a> 是 GitHub 推出的一项服务。它支持将 Git 仓库中的&lt;strong>静态页面&lt;/strong>转为一个网站，完美契合我们的需求。&lt;/p>
+&lt;blockquote>
+&lt;p>需要注册一个 GitHub 账号&lt;/p>&lt;/blockquote>
+&lt;ol>
+&lt;li>创建仓库，仓库名为 &lt;code>{user}.github.io&lt;/code>（user 为创建账号时填写的用户名，创建时要求此名称唯一）。&lt;/li>
+&lt;li>&lt;code>git clone {user}.github.io&lt;/code> 到本地。&lt;/li>
+&lt;li>将 &lt;code>quickstart&lt;/code> 项目生成的 public 文件夹复制到 &lt;code>{user}.github.io&lt;/code> 项目中。&lt;/li>
+&lt;li>在 &lt;code>{user}.github.io&lt;/code> 中添加项目变更并推送到远程仓库。&lt;/li>
+&lt;/ol>
+&lt;p>回顾上述流程，不难发现操作过于复杂，且博客经常更新，有没有简单点的方式呢？
+答案是可以，&lt;code>GitHub Actions&lt;/code> 就能解决此问题。&lt;/p>
+&lt;blockquote>
+&lt;p>&lt;a class="link" href="https://docs.github.com/en/actions" target="_blank" rel="noopener"
+>GitHub Actions&lt;/a> 是 GitHub 提供的 DevOps 功能，可以按需执行自动化流程。&lt;/p>&lt;/blockquote>
+&lt;p>上述操作简化如下：&lt;/p>
+&lt;ol>
+&lt;li>在 &lt;code>quickstart&lt;/code> 中变更博客内容&lt;/li>
+&lt;li>提交 &lt;code>quickstart&lt;/code> 项目，自动运行 &lt;code>hugo server&lt;/code> 命令并生成 &lt;code>public&lt;/code> 目录&lt;/li>
+&lt;li>将 &lt;code>public&lt;/code> 目录复制到 &lt;code>{user}.github.io&lt;/code> 项目中&lt;/li>
+&lt;/ol>
+&lt;p>简化后我们只需要专心致志写博客即可（&lt;code>quickstart&lt;/code>）。&lt;/p>
+&lt;blockquote>
+&lt;p>要将 quickstart 中的 public 写入到 &lt;code>{user}.github.io&lt;/code> 中，就要求获取 &lt;code>{user}.github.io&lt;/code> 仓库的写权限。
+因此需要配置 &lt;code>{user}.github.io&lt;/code> 的 &lt;a class="link" href="https://docs.github.com/en/authentication/connecting-to-github-with-ssh/managing-deploy-keys#deploy-keys" target="_blank" rel="noopener"
+>Deploy key&lt;/a>。
+即在 &lt;code>{user}.github.io&lt;/code> 的 &lt;code>Deploy keys&lt;/code> 中配置公钥，在 &lt;code>quickstart&lt;/code> 的 &lt;code>Secrets and variables/Actions&lt;/code> 中配置私钥（变量名为 DEPLOY_PRIVATE_KEY）。&lt;/p>&lt;/blockquote>
+&lt;p>&lt;code>GitHub Actions&lt;/code> 的 CI/CD 流程通过 YAML 文件配置，需要放在 .github/workflows 目录中，下面是我配置的 &lt;code>deploy.yml&lt;/code> 文件，仅供参考。&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;span class="lnt">17
+&lt;/span>&lt;span class="lnt">18
+&lt;/span>&lt;span class="lnt">19
+&lt;/span>&lt;span class="lnt">20
+&lt;/span>&lt;span class="lnt">21
+&lt;/span>&lt;span class="lnt">22
+&lt;/span>&lt;span class="lnt">23
+&lt;/span>&lt;span class="lnt">24
+&lt;/span>&lt;span class="lnt">25
+&lt;/span>&lt;span class="lnt">26
+&lt;/span>&lt;span class="lnt">27
+&lt;/span>&lt;span class="lnt">28
+&lt;/span>&lt;span class="lnt">29
+&lt;/span>&lt;span class="lnt">30
+&lt;/span>&lt;span class="lnt">31
+&lt;/span>&lt;span class="lnt">32
+&lt;/span>&lt;span class="lnt">33
+&lt;/span>&lt;span class="lnt">34
+&lt;/span>&lt;span class="lnt">35
+&lt;/span>&lt;span class="lnt">36
+&lt;/span>&lt;span class="lnt">37
+&lt;/span>&lt;span class="lnt">38
+&lt;/span>&lt;span class="lnt">39
+&lt;/span>&lt;span class="lnt">40
+&lt;/span>&lt;span class="lnt">41
+&lt;/span>&lt;span class="lnt">42
+&lt;/span>&lt;span class="lnt">43
+&lt;/span>&lt;span class="lnt">44
+&lt;/span>&lt;span class="lnt">45
+&lt;/span>&lt;span class="lnt">46
+&lt;/span>&lt;span class="lnt">47
+&lt;/span>&lt;span class="lnt">48
+&lt;/span>&lt;span class="lnt">49
+&lt;/span>&lt;span class="lnt">50
+&lt;/span>&lt;span class="lnt">51
+&lt;/span>&lt;span class="lnt">52
+&lt;/span>&lt;span class="lnt">53
+&lt;/span>&lt;span class="lnt">54
+&lt;/span>&lt;span class="lnt">55
+&lt;/span>&lt;span class="lnt">56
+&lt;/span>&lt;span class="lnt">57
+&lt;/span>&lt;span class="lnt">58
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-yaml" data-lang="yaml">&lt;span class="line">&lt;span class="cl">&lt;span class="nt">name&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">Deploy to public repo&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="c"># 流水线（流程）名称&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="nt">on&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="c"># 触发条件：仅在 master 分支上的 push 和 pull_request 操作才会运行&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">push&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">branches&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">master ]&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">pull_request&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">branches&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">master ]&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="nt">jobs&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="c"># 配置多个任务（这里只有 build 任务，即希望提交时自动运行 hugo server）&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">build&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">runs-on&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">ubuntu-latest &lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="c"># build 任务运行的基础环境，这里需要注意：以下所有步骤都是在 ubuntu-latest 的容器（虚拟机）中运行，不会影响项目仓库，且在执行完毕后销毁此容器（回收资源）&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">steps&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="c"># 将任务拆分成多个步骤&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>- &lt;span class="nt">name&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">Checkout repo &lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="c"># 将项目 clone 到 ubuntu-latest&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">uses&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">actions/checkout@v4&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>- &lt;span class="nt">name&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">Cache Hugo resources&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="c"># 缓存项目需要的依赖项，加快流程（其实此博客项目没什么好缓存的。。。）&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">uses&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">actions/cache@v4&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">env&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">cache-name&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">cache-hugo-resources&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">with&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">path&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">resources&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">key&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">${{ env.cache-name }}&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>- &lt;span class="nt">uses&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">actions/setup-go@v5 &lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="c"># 安装指定版本的 Go（hugo 运行需要 Go 环境）&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">with&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">go-version&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="m">1.22.12&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>- &lt;span class="nt">run&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">go version&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>- &lt;span class="nt">name&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">Cache Go Modules &lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="c"># 拉取项目需要的依赖库（go.mod 中记录的依赖库信息）&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">uses&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">actions/cache@v4&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">with&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">path&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="p">|&lt;/span>&lt;span class="sd">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="sd"> ~/.cache/go-build
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="sd"> ~/go/pkg/mod&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">key&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">${{ runner.os }}-go-${{ hashFiles(&amp;#39;**/go.sum&amp;#39;) }}&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">restore-keys&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="p">|&lt;/span>&lt;span class="sd">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="sd"> ${{ runner.os }}-go-&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>- &lt;span class="nt">name&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">Setup Hugo &lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="c"># 安装指定版本的 hugo&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">uses&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">peaceiris/actions-hugo@v3&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">with&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">hugo-version&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="m">0.145.0&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">extended&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="kc">true&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>- &lt;span class="nt">name&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">Build &lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="c"># 在容器中运行 hugo --minify --gc 命令生成 public 文件夹&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">run&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="p">|&lt;/span>&lt;span class="sd">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="sd"> hugo --minify --gc
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="sd"> cp CNAME public
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="sd"> cp README.md public&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>- &lt;span class="nt">name&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">Deploy to public repo&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="c"># 将生成的 public 目录推送到指定的仓库和分支中&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">uses&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">s0/git-publish-subdir-action@develop&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">env&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">REPO&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">git@github.com:haxung/haxung.github.io.git&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">BRANCH&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">master&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">FOLDER&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">public&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">SSH_PRIVATE_KEY&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">${{ secrets.DEPLOY_PRIVATE_KEY }}&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="c"># 这里就是配置的 REPO 项目的私钥，通过变量名取值（切记不要明文配置，不然密钥泄露后谁都可以往 REPO 中推送一些奇奇怪怪的内容。。。）&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div></description></item></channel></rss>
