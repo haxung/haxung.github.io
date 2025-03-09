@@ -1,4 +1,8 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>时光随笔</title><link>https://haxung.github.io/</link><description>Recent content on 时光随笔</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Tue, 02 May 2023 16:05:32 +0800</lastBuildDate><atom:link href="https://haxung.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>Hugo 简介</title><link>https://haxung.github.io/p/hugo-%E7%AE%80%E4%BB%8B/</link><pubDate>Tue, 02 May 2023 16:05:32 +0800</pubDate><guid>https://haxung.github.io/p/hugo-%E7%AE%80%E4%BB%8B/</guid><description>&lt;h2 id="引言">引言
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>时光随笔</title><link>https://haxung.github.io/</link><description>Recent content on 时光随笔</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Tue, 02 May 2023 23:04:59 +0800</lastBuildDate><atom:link href="https://haxung.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>Git 常用操作</title><link>https://haxung.github.io/p/git-%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/</link><pubDate>Tue, 02 May 2023 23:04:59 +0800</pubDate><guid>https://haxung.github.io/p/git-%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/</guid><description>&lt;h2 id="引言">引言
+&lt;/h2>&lt;h2 id="安装">安装
+&lt;/h2>&lt;h2 id="使用">使用
+&lt;/h2>&lt;h2 id="总结">总结
+&lt;/h2></description></item><item><title>Hugo 简介</title><link>https://haxung.github.io/p/hugo-%E7%AE%80%E4%BB%8B/</link><pubDate>Tue, 02 May 2023 16:05:32 +0800</pubDate><guid>https://haxung.github.io/p/hugo-%E7%AE%80%E4%BB%8B/</guid><description>&lt;h2 id="引言">引言
 &lt;/h2>&lt;p>&lt;a class="link" href="https://github.com/gohugoio/hugo" target="_blank" rel="noopener"
 >Hugo&lt;/a> 是一个用Go语言实现的静态网站生成器。它简单、易用、高效、易扩展、快速部署。
 确切地说，Hugo 是一个把符合规则的 markdown 文档转为静态网站的 html、css 等文件的工具。&lt;/p>
@@ -16,7 +20,7 @@ Hugo 还提供了内置模板，可以快速完成 SEO、评论、分析等功�
 &lt;/h2>&lt;h2 id="自定义输出格式介绍hugo如何支持自定义输出格式包括json和amp等">自定义输出格式：介绍Hugo如何支持自定义输出格式，包括JSON和AMP等
 &lt;/h2>&lt;h2 id="部署hugo站点介绍如何将hugo站点部署到服务器或cdn上">部署Hugo站点：介绍如何将Hugo站点部署到服务器或CDN上
 &lt;/h2>&lt;h2 id="结论总结hugo的优点和特点鼓励读者尝试使用hugo">结论：总结Hugo的优点和特点，鼓励读者尝试使用Hugo
-&lt;/h2></description></item><item><title>MySQL 基础语句</title><link>https://haxung.github.io/p/mysql-%E5%9F%BA%E7%A1%80%E8%AF%AD%E5%8F%A5/</link><pubDate>Wed, 05 Apr 2023 21:47:40 +0800</pubDate><guid>https://haxung.github.io/p/mysql-%E5%9F%BA%E7%A1%80%E8%AF%AD%E5%8F%A5/</guid><description>&lt;h2 id="基础操作">基础操作
+&lt;/h2></description></item><item><title>MySQL 基础操作</title><link>https://haxung.github.io/p/mysql-%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/</link><pubDate>Wed, 05 Apr 2023 21:47:40 +0800</pubDate><guid>https://haxung.github.io/p/mysql-%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C/</guid><description>&lt;h2 id="基础操作">基础操作
 &lt;/h2>&lt;p>在介绍 &lt;code>MySQL&lt;/code> 基础操作前，需要先安装 &lt;code>MySQL&lt;/code> 。&lt;/p>
 &lt;ul>
 &lt;li>
