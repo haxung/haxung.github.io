@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>hugo on 时光随笔</title><link>https://haxung.github.io/categories/hugo/</link><description>Recent content in hugo on 时光随笔</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Tue, 02 May 2023 16:05:32 +0800</lastBuildDate><atom:link href="https://haxung.github.io/categories/hugo/index.xml" rel="self" type="application/rss+xml"/><item><title>hugo 简介</title><link>https://haxung.github.io/p/hugo-%E7%AE%80%E4%BB%8B/</link><pubDate>Tue, 02 May 2023 16:05:32 +0800</pubDate><guid>https://haxung.github.io/p/hugo-%E7%AE%80%E4%BB%8B/</guid><description>&lt;h2 id="引言">引言
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>hugo on 时光随笔</title><link>https://haxung.github.io/categories/hugo/</link><description>Recent content in hugo on 时光随笔</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><atom:link href="https://haxung.github.io/categories/hugo/index.xml" rel="self" type="application/rss+xml"/><item><title>hugo 简介</title><link>https://haxung.github.io/p/hugo-%E7%AE%80%E4%BB%8B/</link><pubDate>Tue, 02 May 2023 16:05:32 +0800</pubDate><guid>https://haxung.github.io/p/hugo-%E7%AE%80%E4%BB%8B/</guid><description>&lt;h2 id="引言">引言
 &lt;/h2>&lt;p>&lt;a class="link" href="https://github.com/gohugoio/hugo" target="_blank" rel="noopener"
 >hugo&lt;/a> 是一个用 Go 语言实现的静态网站生成器。把符合规则的 markdown 文档转为静态网站的 html、css 等文件的工具，
 即将 markdown 文档转为博客。&lt;/p>
@@ -101,7 +101,8 @@
 &lt;/ol>
 &lt;p>回顾上述流程，不难发现操作过于复杂，且博客经常更新，有没有简单点的方式呢？
 答案是可以，&lt;code>GitHub Actions&lt;/code> 就能解决此问题。&lt;/p>
-&lt;blockquote>
+&lt;h3 id="github-actions">GitHub Actions
+&lt;/h3>&lt;blockquote>
 &lt;p>&lt;a class="link" href="https://docs.github.com/en/actions" target="_blank" rel="noopener"
 >GitHub Actions&lt;/a> 是 GitHub 提供的 DevOps 功能，可以按需执行自动化流程。&lt;/p>&lt;/blockquote>
 &lt;p>上述操作简化如下：&lt;/p>
@@ -116,7 +117,7 @@
 因此需要配置 &lt;code>{user}.github.io&lt;/code> 的 &lt;a class="link" href="https://docs.github.com/en/authentication/connecting-to-github-with-ssh/managing-deploy-keys#deploy-keys" target="_blank" rel="noopener"
 >Deploy key&lt;/a>。
 即在 &lt;code>{user}.github.io&lt;/code> 的 &lt;code>Deploy keys&lt;/code> 中配置公钥，在 &lt;code>quickstart&lt;/code> 的 &lt;code>Secrets and variables/Actions&lt;/code> 中配置私钥（变量名为 DEPLOY_PRIVATE_KEY）。&lt;/p>&lt;/blockquote>
-&lt;p>&lt;code>GitHub Actions&lt;/code> 的 CI/CD 流程通过 YAML 文件配置，需要放在 .github/workflows 目录中，下面是我配置的 &lt;code>deploy.yml&lt;/code> 文件，仅供参考。&lt;/p>
+&lt;p>&lt;code>GitHub Actions&lt;/code> 的 CI/CD 流程通过 YAML 文件配置，需要放在项目的 &lt;code>.github/workflows&lt;/code> 目录中，下面是我配置的 &lt;code>deploy.yml&lt;/code> 文件，仅供参考。&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
